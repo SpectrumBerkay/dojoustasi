@@ -43,14 +43,13 @@ client.on('message', msg => {
       .setThumbnail(msg.author.avatarURL)
  msg.channel.sendEmbed(embed);
  break;
-  }
-  
+
 client.on('guildMemberAdd', member => {
   console.log('User ' + member.username + ' joined')
   
 var role = member.guild.roles.find('name', 'Beginners');
 
 member.addRole(role)   
-}  
+ 
 
 client.login(process.env.BOT_TOKEN);
