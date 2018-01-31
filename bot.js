@@ -14,7 +14,7 @@ client.on('message', msg => {
   
   switch (args[0].toLowerCase()) {
   
-  case "embed":
+  case "sadf":
       
 var role = member.guild.roles.find('name', 'Beginners');
 
