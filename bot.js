@@ -15,10 +15,11 @@ client.on('message', msg => {
   switch (args[0].toLowerCase()) {
   
   case "embed":
-  
+      
 var role = member.guild.roles.find('name', 'Beginners');
 
-member.addRole(role)     
+member.addRole(role)    
+ break;
   }
 });
            
