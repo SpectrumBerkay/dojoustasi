@@ -9,8 +9,8 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 
-  if(command === 'userinfo') {
-    let embed = new Discord.RichEmbed()
+  case "userinfo"
+    var embed = new Discord.RichEmbed()
     .setAuthor(msg.author.username)
     .setDescription("This is the user info!");
     
