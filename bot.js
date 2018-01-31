@@ -11,7 +11,7 @@ client.on("message", async message => {
 
   if(command === 'userinfo') {
     let embed = new Discord.RichEmbed()
-    .setAuthor(message.author.username)
+    .setAuthor(msg.author.username)
     .setDescription("This is the user info!");
     
     message.channel.sendEmbed(embed)
