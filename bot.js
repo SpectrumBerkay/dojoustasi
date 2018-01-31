@@ -47,6 +47,6 @@ const embed = {
     }
   ]
 };
-channel.send("this `supports` __a__ **subset** *of* ~~markdown~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```", { embed });
+channel.send("asd");
            
 client.login(process.env.BOT_TOKEN);
