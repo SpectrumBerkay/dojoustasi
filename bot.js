@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 
-  case "userinfo"
+  case "userinfo":
     var embed = new Discord.RichEmbed()
     .setAuthor(msg.author.username)
     .setDescription("This is the user info!");
