@@ -1,22 +1,24 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-var prefix = ("$");
+var prefix = ("fbebsi");
 
 client.on('ready', () => {
-  console.log(`Bot Working....`);
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("message", async message => {
+  
+client.on('message', msg => {
+  
+  var args = msg.content.substring(prefix.lenght).split(" ");
+  
+  switch (args[0].toLowerCase()) {
+  
+  case "fuccc":
+    var role = member.guild.roles.find('name', 'Beginners');
 
-  case "yay":
-      var embed = new Discord.RichEmbed()
-      .setAuthor(msg.author.username)
-      .setColor(0xFFFFFF)
-      .setFooter("Spectrum! ©")
-      .setThumbnail(msg.author.avatarURL)
- msg.channel.sendEmbed(embed);
+member.addRole(role)   
   }
-});  
-
+});
+           
 client.login(process.env.BOT_TOKEN);
