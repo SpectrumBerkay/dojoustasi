@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 
-  if(command === '${prefix}userinfo') {
+  if(command === 'userinfo') {
     let embed = new Discord.RichEmbed()
     .setAuthor(message.author.username)
     .setDescription("This is the user info!");
