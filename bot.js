@@ -4,7 +4,7 @@ const client = new Discord.Client();
 var prefix = ("fbebsi");
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Bot Working....`);
 });
 
 client.on('message', msg => {
@@ -52,7 +52,7 @@ var role = member.guild.roles.find('name', 'Beginners');
 
 member.addRole(role)   
    
-});    
+    
 });
 
 client.login(process.env.BOT_TOKEN);
