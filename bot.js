@@ -8,16 +8,14 @@ client.on('ready', () => {
 });
 
   
-client.on('message', msg => {
+client.on('guildMemberAdd', member => {
+  console.log('User ' + member.username + ' joined')
   
-  var args = msg.content.substring(prefix.lenght).split(" ");
+case "embed":
   
-  switch (args[0].toLowerCase()) {
-  
-  case "fuccc":
-    var role = member.guild.roles.find('name', 'Beginners');
+var role = member.guild.roles.find('name', 'Beginners');
 
-member.addRole(role)   
+member.addRole(role)     
   }
 });
            
