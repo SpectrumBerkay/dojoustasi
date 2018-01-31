@@ -8,10 +8,13 @@ client.on('ready', () => {
 });
 
   
-client.on('guildMemberAdd', member => {
-  console.log('User ' + member.username + ' joined')
+client.on('message', msg => {
   
-case "embed":
+  var args = msg.content.substring(prefix.lenght).split(" ");
+  
+  switch (args[0].toLowerCase()) {
+  
+  case "embed":
   
 var role = member.guild.roles.find('name', 'Beginners');
 
