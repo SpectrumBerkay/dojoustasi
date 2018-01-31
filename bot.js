@@ -9,12 +9,13 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 
-  case "userinfo":
-    var embed = new Discord.RichEmbed()
-    .setAuthor(msg.author.username)
-    .setDescription("This is the user info!");
-    
-    message.channel.sendEmbed(embed)
+  case "yay":
+      var embed = new Discord.RichEmbed()
+      .setAuthor(msg.author.username)
+      .setColor(0xFFFFFF)
+      .setFooter("Spectrum! ©")
+      .setThumbnail(msg.author.avatarURL)
+ msg.channel.sendEmbed(embed);
   }
 });  
 
